@@ -1,27 +1,39 @@
 * 
-    
+    box-sizing: border-box
     padding: 0
     margin: 0
     
 
 html
-    background: #1D1818
+    
   
 body
+    @media screen and ( min-width: 700px )
+        font-size: 30px
+        line-height: 1.6em
+
     font-size: calc(1.3em + 1vw)
     font-family: 'Roboto', sans-serif
     padding: 0
     margin: 0
-    background: #000
+    background: rgb(48, 48, 56)
     color: #fff
 
+
+
 .content
+    @media screen and ( min-width: 700px )
+        max-width: 700px
+
     max-width: 500px
     margin: 0 auto
     height: calc( 100vh / 2 )
     
 .wrapper
     margin: 0 .7em 
+    @media screen and ( min-width: 700px )
+        padding: .4em 2em
+    padding:  .2em
 
 
     
@@ -41,6 +53,7 @@ body
     &__name
         font-size: 1.2em
         padding-bottom: 7px
+        
         margin: 0
         font-weight: 500
 
@@ -51,7 +64,7 @@ body
 
 .main
     background: #1D1818
-    height: 100%
+    box-shadow: 20px 20px 70px rgba(1, 1, 1, .8)
 
     &__inf
         padding: 18px 0
@@ -65,11 +78,12 @@ body
         font-weight: 300
         font-size: .9em
     &__contacts 
-        padding: 18px 0
+        padding: 18px 0 70px 0
         display: flex
         justify-content: space-between
         img
             width: 2em
+        
 
 
 
